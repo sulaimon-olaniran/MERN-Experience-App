@@ -1,0 +1,137 @@
+.create-experience-page-form-container{
+    width: 100%;
+    min-height: 90vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .create-experience-form-section-container{
+        width: 100%;
+        min-height: 25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        .create-experience-page-form-image-div{
+            width: 90%;
+            min-height: 10rem;
+            background: url("https://www.europeancitiesmarketing.com/wp-assets/uploads/2016/06/Banner-Sharing-Economy.jpg");
+            //background-color: darkgreen;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-bottom: 10px;
+        }
+    
+        form{
+            width: 90%;
+            min-height: 25rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            small{
+                color: red;
+                margin: 5px 0;
+            }
+
+
+            [type="file"]{
+                display: none;
+            }
+
+            label{
+                width: 100%;
+                min-height: 45px;
+            }
+
+            .custom-input-file-container{
+                width: 100%;
+                height: 45px;
+                border: 1px solid rgb(176, 176, 176);
+                border-radius: 5px;
+                display: flex;
+                cursor: pointer;
+                margin-bottom: 5px;
+
+                .button-container{
+                    width: 40%;
+                    height: 45px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-right: 1px solid rgb(176, 176, 176);
+                    background-color: gray;
+                    
+                    p{
+                        color: white;
+                        text-align: center;
+                    }
+                }
+
+                .file-name-container{
+                    width: 60%;
+                    height: 45px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    p{
+                        text-align: center;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+
+
+
+@media(min-width : 600px) {
+    .create-experience-page-form-container{
+        .create-experience-form-section-container{
+            width: 80%;
+            border: 1px solid lightgray;
+            padding-bottom: 15px;
+            border-radius: 5px;
+            overflow: hidden;
+            .create-experience-page-form-image-div{
+                width: 100%;
+                min-height: 25rem;
+            }
+        }
+    }
+}
+
+
+@media(min-width : 1200px) {
+    .create-experience-page-form-container{
+        .create-experience-form-section-container{
+            width: 90%;
+            padding: 0;
+            margin: 0;
+            border-radius: 5px;
+            overflow: hidden;
+            flex-direction: row;
+
+            .create-experience-page-form-image-div{
+                width: 100%;
+                margin: 0;
+                min-height: 25rem;
+                width: 50%;
+            }
+
+            form{
+                width: 45%;
+                margin-right: 20px;
+            }
+        }
+    }
+}

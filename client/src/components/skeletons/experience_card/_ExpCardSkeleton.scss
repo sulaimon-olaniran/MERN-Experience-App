@@ -1,0 +1,37 @@
+.exp-card-skeleton-container{
+    width: 90%;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgb(157, 157, 157);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px;
+    //box-shadow: -7px 9px 5px 0px rgba(0,0,0,0.45);
+
+    .exp-top-section-container{
+        width: 100%;
+        height: 5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+
+        .exp-top-texts-container{
+            width: 70%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}
+
+
+@media(min-width : 900px) {
+    .exp-card-skeleton-container{
+        width: 45%;
+    }
+}

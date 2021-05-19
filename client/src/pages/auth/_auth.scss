@@ -1,0 +1,53 @@
+.auth-form-component-container{
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    .auth-form-component-form{
+        width: 95%;
+        min-height: 15rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid lightgray;
+        padding: 25px 0;
+        background-color: white;
+        border-radius: 10px;
+        //box-shadow: 0 8px 6px -6px black;
+        box-shadow: 2px 2px 4px 5px #ccc;
+
+        .MuiFormControl-root{
+            margin-bottom: 15px;
+        }
+
+        button{
+            margin-bottom: 15px;
+        }
+
+        button:disabled{
+            background-color: darkgray !important;
+            color: white !important;
+        }
+
+
+        .auth-error-text{
+            color: red;
+        }
+    }
+}
+
+
+
+
+
+@media(min-width : 600px) {
+   .auth-form-component-container{
+       .auth-form-component-form{
+           width: 60%;
+       }
+   }
+}

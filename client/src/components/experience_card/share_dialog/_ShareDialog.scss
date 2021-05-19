@@ -1,0 +1,27 @@
+.experience-share-dialog-container{
+    width: 20rem;
+    min-height: 20rem;
+    background-color: white;
+    outline: none;
+
+    .share-diaglog-button-container{
+        width: 100%;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid lightgray;
+
+        button{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            padding-left: 20px !important;
+            align-items: center;
+
+            p{
+                margin-left: 10px;
+            }
+        }
+
+    }
+}

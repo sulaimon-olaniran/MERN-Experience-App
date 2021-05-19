@@ -1,0 +1,61 @@
+.verification-page-container{
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .verification-page-sub-container{
+        width: 95%;
+        height: 20rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        h1{
+            text-align: center;
+            font-size: 1.4rem;
+        }
+
+        p{
+            text-align: justify;
+        }
+
+        .verification-page-input-container{
+            width: 100%;
+            min-height: 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .styles_react-code-input__CRulA{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            input{
+                width: 17% !important;
+            }
+        }
+
+        .verification-page-buttons-container{
+            width: 100%;
+            height: 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+            button{
+                text-transform: capitalize;
+                width: 45%;
+            }
+
+            button:disabled{
+                background-color: darkgray !important;
+            }
+
+        }
+    }
+}

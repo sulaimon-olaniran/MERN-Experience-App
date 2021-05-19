@@ -1,0 +1,48 @@
+.home-page-container{
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $mainBackground;
+
+    .home-page-category-select-container{
+        width: 95%;
+        height: 4rem;
+        margin: 20px 0;
+        .MuiFormControl-root{
+            width: 100%;
+        }
+    }
+
+    .homepage-no-experience-container{
+        width: 95%;
+        height: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h1{
+            font-size: 1.4rem;
+            text-align: center;
+        }
+    }
+}
+
+
+@media(min-width : 600px) {
+    .home-page-container{
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .home-page-category-select-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .MuiFormControl-root{
+                width: 20rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.profile-actions-dialog-container{
+    width: 20rem;
+    height: 8rem;
+    
+
+    .profile-actions-dialog-button-container{
+        width: 100%;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid gray;
+
+        button{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

@@ -1,0 +1,108 @@
+.profile-component-container{
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .profile-component-details-container{
+        width: 95%;
+        min-height: 15rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid gray;
+        padding-bottom: 15px;
+
+        .first-section{
+            width: 100%;
+            min-height: 10rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 15px;
+
+            .actions-image-container{
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                //padding: 0 15px;
+            }
+
+            h1{
+                margin: 15px 0;
+                span{
+                    color: green;
+                }
+            }
+        }
+
+        .second-section{
+            width: 95%;
+            min-height: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid lightgray;
+            padding: 10px;
+            margin-bottom: 15px;
+
+            p{
+                text-align: justify;
+            }
+        }
+
+        .third-section{
+            width: 95%;
+            height: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            border: 1px solid lightgray;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+    }
+
+
+
+
+    .profile-component-experiences-container{
+        width: 95%;
+        min-height: 10rem;
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .profile-component-experiences-button-container{
+            width: 100%;
+            height: 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            button{
+                width: 160px;
+            }
+        }
+    }
+}
+
+
+
+@media(min-width : 600px) {
+    .profile-component-container{
+        .profile-component-experiences-container{
+            .profile-component-experiences-button-container{
+                width: 50%;
+            }
+        }
+    }
+}
+
+
+
+@import './actions_dialog/ActionsDialog';
+@import './shared_exp/SharedExperience';
+@import './saved_exp/SavedExperience';

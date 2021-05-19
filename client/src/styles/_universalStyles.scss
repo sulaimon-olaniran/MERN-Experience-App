@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+$mainBackground : white;
+$mainBorderColor : #F3E8EE;
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Josefin Sans', cursive;
+}
+
+.pages-container{
+    padding-top: 4.5rem;
+    background-color: $mainBackground;
+    width: 100%;
+}
+
+.App{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .MuiSvgIcon-root{
+        cursor: pointer;
+    }
+}
+
+
+//removes lines from a tag on app
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+@media(min-width : 600px) {
+    .pages-container{
+        padding-top: 5rem;
+        width: 920px;
+    }
+}

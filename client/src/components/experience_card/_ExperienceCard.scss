@@ -1,0 +1,127 @@
+.experience-card-container{
+    width: 95%;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px;
+    //box-shadow: -7px 9px 5px 0px rgba(0,0,0,0.45);
+
+    .experience-card-top-section-container{
+        width: 100%;
+        height: 5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+       // padding-top: 15px;
+
+        .experience-card-info-container{
+            width: 70%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid lightgray;
+
+            .experience-name-time-detail{
+                width: 75%;
+                display: flex;
+                flex-direction: column;
+                margin-left: 15px;
+
+                P{
+                    margin-bottom: 5px;
+                }
+                
+            }
+        }
+    }
+
+    .experience-card-image-container{
+        width: 100%;
+        height: 25rem;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .experience-card-details-container{
+        width: 90%;
+        height: 10rem;
+        padding: 20px 0;
+        border-top: 1px solid lightgray;
+
+        .experience-card-details-top-section{
+            width: 100%;
+            height: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 0;
+
+            small{
+                color: rgb(138, 138, 138);
+            }
+        }
+
+
+        h3{
+            color: rgb(87, 87, 87);
+            margin: 15px 0;
+        }
+
+        p{
+            color: rgb(58, 58, 58);
+            margin: 10px 0;
+        }
+
+        .experience-card-details-actions-container{
+            width: 100%;
+            height: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+
+            .likes-container{
+                width: 80px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                p{
+                    margin-left: 10px
+                }
+            }
+
+            .share-delete-save-container{
+                width: 80px;
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+
+            }
+        }
+    }
+}
+
+
+
+
+
+@media(min-width : 900px) {
+    .experience-card-container{
+        width: 45%;
+    }
+}
+
+
+
+@import './options_dialog/OptionsDialog';
+@import './share_dialog/ShareDialog';
