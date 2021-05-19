@@ -7,7 +7,6 @@ if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
 
     experiencesApi = 'http://localhost:5000/experiences'
     usersApi = 'http://localhost:5000/users'
-    console.log("development mode")
     
    
 

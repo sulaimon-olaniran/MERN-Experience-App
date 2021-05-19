@@ -30,7 +30,7 @@ const auth = (req, res, next) => {
 
         const decoded = jwt.verify(token, JWT_SECRET)
 
-        //saving the decoded data into a variable user in the request body
+        //storing the decoded data into a variable user in the request body
         req.user = decoded
 
         next()
